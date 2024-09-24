@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- end------ -->
+    <title>Donate Bangladesh</title>
+    <!-- style  -->
+    <style>
+      .lexend {
+        font-family: "Lexend", sans-serif;
+        font-optical-sizing: auto;
+      }
+      .bg-btn {
+        background-color: #b4f461;
+      }
+      .header-bg {
+        background-color: #f9f7f3;
+      }
+      .text-color {
+        color: #111111b3;
+      }
+    </style>
+    <title>FAQ</title>
+  </head>
+  <body class="lexend">
+    <header
+      id="header"
+      class="max-w-[1440px] mx-auto z-10 top-0 backdrop-invert-0 bg-white/100"
+    >
+      <section>
+        <!-- navbar Center -->
+        <div
+          class="navbar-center flex md:hidden w-11/12 mx-auto py-2 items-center justify-center"
+        >
+          <img src="assets/logo.png" alt="" />
+          <a class="btn btn-ghost text-xl font-bold">Donate Bangladesh</a>
+        </div>
+        <div class="navbar w-11/12 mx-auto lg:h-8">
+          <!-- navbar Start -->
+          <div class="navbar-start">
+            <button id="home" class="bg-btn lg:px-8 lg:py-1.5 rounded-lg px-8 py-2 font-bold">
+              <a href="./index.html">Home</a>
+            </button>
+          </div>
+          <!-- navbar Center -->
+          <div class="navbar-center hidden lg:flex ml-[8px]">
+            <img src="assets/logo.png" alt="" />
+            <h2 class="text-[30px] font-bold">Donate Bangladesh</h2> 
+          </div>
+          <!-- navbar end -->
+          <div class="navbar-end flex gap-2">
+            <img src="assets/coin.png" alt="" />
+            <span id="my-balanc" class="font-bold text-color">5000</span>
+            <span class="text-color font-bold">BDT</span>
+          </div>
+          <!--  -->
+        </div>
+      </section>
+    </header>
+    <main class="max-w-[1440px] mx-auto my-10 mt-20">
+      <section class="w-11/12 mx-auto gap-4">
+        <h1 class="font-bold text-4xl">Important FAQ ?</h1>
+        <div class="collapse collapse-arrow bg-base-200 gap-5 my-5">
+          <!-- titel -->
+          <input type="radio" name="my-accordion-2" checked="checked" />
+          <div class="collapse-title text-xl font-medium">
+            What is the Document Object Model (DOM)?
+          </div>
+          <div class="collapse-content">
+            <p>
+              The document object model is a programming interface for web
+              documents. It represents the structure of a document as a tree of
+              object. Each mode in the tree corresponds to parts of the
+              document, such as elements, attributes and text
+            </p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200 gap-5 my-5">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            How do you select an element from the DOM?
+          </div>
+          <div class="collapse-content">
+            <p>
+              I can select elements from the DOM using several methods in
+              javaSceipt. Here are some of the most common ways: 1- Tree
+              structure etc.
+            </p>
+            <div class="overflow-x-auto">
+              <li>hi</li>
+            </div>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200 gap-5 my-5">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            How does the JavaScript Engine work?
+          </div>
+          <div class="collapse-content">
+            <p>
+              The JaveScript engine is a software environment that reads,
+              parsess, and executes javascript code.
+            </p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200 gap-5 my-5">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            What is the javascript event object ?
+          </div>
+          <div class="collapse-content">
+            <p>
+              The javascript event object is a built-in object that contains
+              information about an event that occyrs in the browser, such as a
+              mouse click, keyboard press or form submission.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="main.js"></script>
+  <script src="faq.js"></script>
+</html>
