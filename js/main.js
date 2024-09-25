@@ -36,17 +36,17 @@ window.addEventListener("scroll", function () {
   // ---value function
   
   function inputValu(id) {
-    return parseFloat(document.getElementById(id).value);
+    return Number(document.getElementById(id).value);
   }
   
   function innerText(id) {
-    return parseFloat(document.getElementById(id).innerText);
+    return Number(document.getElementById(id).innerText);
   }
 
 
   
   // -----card 1
-  function donateButton(e) {
+  function donateButtonOne(e) {
     const myBalanc = innerText("my-balanc");
     const donateAmount = inputValu("donate-input");
   
@@ -54,10 +54,11 @@ window.addEventListener("scroll", function () {
   
     // --if conditaion add
   
-    if (donateAmount < 0 ||( Number.isNaN(donateAmount) )|| myBalanc < donateAmount) {
+    if (donateAmount < 0 || Number.isNaN(donateAmount) || myBalanc < donateAmount) {
       alert(" Yor are rang");
       return;
-    } else {
+    }   
+    else {
       const modal = document.getElementById("my-modal");
       modal.showModal();
   
@@ -74,7 +75,12 @@ window.addEventListener("scroll", function () {
     // -----Modal add
   }
   
-  // ------------
+
+
+
+
+
+  // ------------card 2
   function donateButtonTwo(e) {
     const myBalanc = innerText("my-balanc");
   
@@ -83,14 +89,10 @@ window.addEventListener("scroll", function () {
     const donetTwoShow = innerText("main-donate-two");
   
     // --if conditaion add
-    if (
-      donateTwoAmount < 0 ||
-      isNaN(donateTwoAmount) ||
-      myBalanc < donateTwoAmount
-    ) {
-      alert(" Yor are rang");
-      return;
-    } else {
+    if (donateTwoAmount < 0 || isNaN(donateTwoAmount) || myBalanc < donateTwoAmount) {
+    alert(" Yor are rang");
+    return;
+  }  else {
       const modal = document.getElementById("my-modal");
       modal.showModal();
       // -----
@@ -116,10 +118,7 @@ window.addEventListener("scroll", function () {
     const donetTwoShow = innerText("main-donate-three");
   
     // --if conditaion add
-    if (
-      donateTwoAmount < 0 ||
-      isNaN(donateTwoAmount) ||
-      myBalanc < donateTwoAmount
+    if (donateTwoAmount < 0 || Number.isNaN(donateTwoAmount) || myBalanc < donateTwoAmount
     ) {
       alert(" Yor are rang");
       return;
@@ -152,3 +151,8 @@ window.addEventListener("scroll", function () {
     const historyShow = document.getElementById("history-div");
     historyShow.appendChild(historyDiv);
   }
+
+
+  document.getElementById('blog').addEventListener('click',function(){
+      window.location.href = './accordien.html'
+  })

@@ -43,23 +43,23 @@
     >
       <section class="backdrop-invert-0 lg:py-3 bg-yellow-50 rounded-lg">
         <!--Phone navbar Center -->
-        <div
-          class="navbar-center flex md:hidden w-11/12 mx-auto py-2 items-center justify-center"
+    
+        <div class="navbar w-11/12 mx-auto lg:h-8">
+          <!-- navbar Start -->
+          <div class="navbar-start">
+            <button
+            id="blog"
+            class="bg-btn lg:px-8 lg:py-1.5 rounded-lg px-8 py-2 font-bold">
+            Blog
+          </button>
+          </div>
+          <!-- navbar Center -->
+          <div
+          class="navbar-center hidden lg:flex  w-11/12 mx-auto py-2 items-center justify-center"
         >
           <img src="assets/logo.png" alt="" />
           <a class="btn btn-ghost text-xl font-bold">Donate Bangladesh</a>
         </div>
-        <div class="navbar w-11/12 mx-auto lg:h-8">
-          <!-- navbar Start -->
-          <div class="navbar-start">
-            <button class="bg-btn lg:px-8 lg:py-1.5 rounded-lg px-8 py-2 font-bold"><a href="./accordien.html">Blog</a>
-            </button>
-          </div>
-          <!-- navbar Center -->
-          <div class="navbar-center hidden lg:flex">
-            <img src="assets/logo.png" alt="" />
-            <a class="btn btn-ghost lg:text-xl">Donate Bangladesh</a>
-          </div>
           <!-- navbar end -->
           <div class="navbar-end flex gap-2">
             <img src="assets/coin.png" alt="" />
@@ -117,12 +117,12 @@
                   Donate for Flood at Noakhali, Bangladesh
                 </h1>
                 <p class="py-6 lg:pr-14">
-                  The recent floods in Noakhali have caused significant damage
-                  to homes infrastructure. Your donation will help provide
-                  essential supplies and to those affected by this disaster.
-                  Every contribution, big or small, makes difference. Please
-                  join us in supporting the relief efforts and making a positive
-                  impact on the lives of those in need.
+                  Noakhali, Bangladesh, is facing one of its worst floods in 2024, leaving thousands homeless.
+                  Urgent help is needed to provide food, safe drinking water, and emergency shelter.
+                  Your donation can offer immediate relief to families struggling to survive in the aftermath.
+                  The flood has wiped out homes, livelihoods, and essential infrastructure, leaving many in despair.
+                  Funds will help provide medical aid to prevent disease outbreaks in affected areas.
+                  Vulnerable groups, especially children and the elderly, are in 
                 </p>
                 <!-- input text -->
                 <input
@@ -134,10 +134,9 @@
                 <br />
                 <!-- button -->
                 <button
-                  onclick="donateButton(this)"
+                  onclick="donateButtonOne(this)"
                   id="donat-btn"
-                  class="btn bg-btn max-w-full w-full mt-4"
-                >
+                  class="btn bg-btn max-w-full w-full mt-4">
                   Donate Now
                 </button>
               </div>
@@ -170,12 +169,14 @@
                   Donate for Flood Relief in Feni,Bangladesh
                 </h1>
                 <p class="py-6 lg:pr-14">
-                  The recent floods in Noakhali have caused significant damage
-                  to homes infrastructure. Your donation will help provide
-                  essential supplies and to those affected by this disaster.
-                  Every contribution, big or small, makes difference. Please
-                  join us in supporting the relief efforts and making a positive
-                  impact on the lives of those in need.
+                  Feni, Bangladesh, is suffering from devastating floods in 2024, leaving thousands displaced.
+Immediate donations are crucial to provide food, clean water, and emergency shelter for victims.
+Your support can bring life-saving relief to families affected by this disaster.
+Homes, crops, and infrastructure have been destroyed, creating an urgent need for aid.
+Medical supplies are desperately needed to prevent the spread of waterborne diseases.
+Vulnerable groups, including children and the elderly, are at high risk and need immediate assistance.
+Relief teams are working on the ground, but they need more resources to meet the growing demand.
+
                 </p>
                 <!-- input text -->
                 <input
@@ -222,12 +223,10 @@
                   Aid for Injured in the Quota Movement
                 </h1>
                 <p class="py-6 lg:pr-14">
-                  The recent floods in Noakhali have caused significant damage
-                  to homes infrastructure. Your donation will help provide
-                  essential supplies and to those affected by this disaster.
-                  Every contribution, big or small, makes difference. Please
-                  join us in supporting the relief efforts and making a positive
-                  impact on the lives of those in need.
+                  The 2024 Quota Movement has left many injured, and they urgently need medical assistance.
+                  Donations are needed to provide life-saving treatments and care for those hurt in the protests.Many victims are struggling to afford necessary surgeries and rehabilitation.
+                  Your support can help cover hospital bills, medication, and long-term recovery services.
+                  Families of the injured are facing financial hardships, and aid is critical to ease their burden. Medical supplies and trauma care are in short supply due to the growing number of injured.
                 </p>
                 <!-- input text -->
                 <input
@@ -290,8 +289,9 @@
       </div>
     </footer>
 
+     
     <!-- script link add -->
-    <script src="faq.js"></script>
+    <script src="./js/faq.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
