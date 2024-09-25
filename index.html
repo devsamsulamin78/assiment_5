@@ -1,283 +1,230 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Tailwind cdn -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- end------ -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <title>Donate Bangladesh</title>
-    <!-- style  -->
-    <style>
-      .lexend {
-        font-family: "Lexend", sans-serif;
-        font-optical-sizing: auto;
-      }
-      .bg-btn {
-        background-color: #b4f461;
-      }
-      .header-bg {
-        background-color: #f9f7f3;
-      }
-      .text-color {
-        color: #111111b3;
-      }
-    </style>
-  </head>
-  <body class="lexed mb-20">
-    <!-- header div start -->
-    <header
-      id="header"
-      class="max-w-[1440px] mx-auto z-10 top-0 backdrop-invert-0 bg-white/95"
-    >
-      <section class="backdrop-invert-0 lg:py-3 bg-yellow-50 rounded-lg">
-        <!--Phone navbar Center -->
-    
-        <div class="navbar w-11/12 mx-auto lg:h-8">
-          <!-- navbar Start -->
-          <div class="navbar-start">
-            <button
-            id="blog"
-            class="bg-btn lg:px-8 lg:py-1.5 rounded-lg px-8 py-2 font-bold">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Tailwind cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- end------ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet" />
+  <title>Donate Bangladesh</title>
+  <!-- style  -->
+  <style>
+    .lexend {
+      font-family: "Lexend", sans-serif;
+      font-optical-sizing: auto;
+    }
+
+    .bg-btn {
+      background-color: #b4f461;
+    }
+
+    .header-bg {
+      background-color: #f9f7f3;
+    }
+
+    .text-color {
+      color: #111111b3;
+    }
+  </style>
+</head>
+
+<body class="lexed mb-20">
+  <!-- header div start -->
+  <header id="header" class="max-w-[1440px] mx-auto z-10 top-0 backdrop-invert-0 bg-white/95">
+    <section class="backdrop-invert-0 lg:py-3 bg-yellow-50 rounded-lg">
+      <!--Phone navbar Center -->
+
+      <div class="navbar w-11/12 mx-auto lg:h-8">
+        <!-- navbar Start -->
+        <div class="navbar-start">
+          <button id="blog" class="bg-btn lg:px-8 lg:py-1.5 rounded-lg px-8 py-2 font-bold">
             Blog
           </button>
-          </div>
-          <!-- navbar Center -->
-          <div
-          class="navbar-center hidden lg:flex  w-11/12 mx-auto py-2 items-center justify-center"
-        >
-          <img src="assets/logo.png" alt="" />
-          <a class="btn btn-ghost text-xl font-bold">Donate Bangladesh</a>
         </div>
-          <!-- navbar end -->
-          <div class="navbar-end flex gap-2">
-            <img src="assets/coin.png" alt="" />
-            <span id="my-balanc" class="font-bold text-color">5000</span>
-            <span class="text-color font-bold">BDT</span>
-          </div>
-          <!--  -->
+        <!-- navbar Center -->
+        <div class="navbar-center hidden lg:flex ml-[8px]">
+          <img src="assets/logo.png" alt="" class="mr-[5px]" />
+          <h2 class="text-[25px] font-bold">Donate Bangladesh</h2>
         </div>
-      </section>
-      <!-- Hero section  Start -->
-      <section class="w-11/12 mx-auto">
-        <!-- Hero Btn -->
-        <div
-          class="flex justify-center items-center gap-5 lg:py-10 py-4 lg:mt-10"
-        >
-          <button
-            id="donation-btn"
-            class="btn bg-btn px-10 font-bold text-black border-slate-300"
-          >
-            Donation
-          </button>
+        <!-- navbar end -->
+        <div class="navbar-end flex gap-2">
+          <img src="assets/coin.png" alt="" />
+          <span id="my-balanc" class="font-bold text-color">5000</span>
+          <span class="text-color font-bold">BDT</span>
+        </div>
+        <!--  -->
+      </div>
+    </section>
+    <!-- Hero section  Start -->
+    <section class="w-11/12 mx-auto">
+      <!-- Hero Btn -->
+      <div class="flex justify-center items-center gap-5 lg:py-10 py-4 lg:mt-10">
+        <button id="donation-btn" class="btn bg-btn px-10 font-bold text-black border-slate-300">
+          Donation
+        </button>
 
-          <button
-            id="history-btn"
-            class="btn font-bold px-10 text-black border-slate-300"
-          >
-            History
-          </button>
-        </div>
-      </section>
-    </header>
-    <!-- Main div start -->
-    <main 
-      id="donation-main-div"
-      class="max-w-[1440px] mx-auto bg-slate-200 lg:my-10"
-    >
-      <!-- Donation section start -->
-      <section class="lg:py-5">
-        <div class="section-container w-11/12 border-2 rounded-xl mx-auto">
-          <div class="hero bg-base-100 rounded-2xl shadow-sm">
-            <div class="hero-content grid lg:grid-cols-2">
-              <div >
-                <img src="assets/noakhali.png" alt="" />
+        <button id="history-btn" class="btn font-bold px-10 text-black border-slate-300">
+          History
+        </button>
+      </div>
+    </section>
+  </header>
+  <!-- Main div start -->
+  <main id="donation-main-div" class="max-w-[1440px] mx-auto bg-slate-200 lg:my-10">
+    <!-- Donation section start -->
+    <section class="lg:py-5">
+      <div class="section-container w-11/12 border-2 rounded-xl mx-auto">
+        <div class="hero bg-base-100 rounded-2xl shadow-sm">
+          <div class="hero-content grid lg:grid-cols-2">
+            <div>
+              <img src="assets/noakhali.png" alt="" />
+            </div>
+            <div class="text-left">
+              <div class="flex gap-2 bg-slate-100 lg:w-3/12 w-6/12 p-2 rounded-lg">
+                <img src="assets/coin.png" alt="" />
+                <span id="main-donate" class="font-bold text-color">0</span>
+                <span class="text-color font-bold">BDT</span>
               </div>
-              <div class="text-left">
-                <div
-                  class="flex gap-2 bg-slate-100 lg:w-3/12 w-6/12 p-2 rounded-lg"
-                >
-                  <img src="assets/coin.png" alt="" />
-                  <span id="main-donate" class="font-bold text-color">0</span>
-                  <span class="text-color font-bold">BDT</span>
-                </div>
-                <br />
-                <h1 class="font-bold text-[20px]">
-                  Donate for Flood at Noakhali, Bangladesh
-                </h1>
-                <p class="py-6 lg:pr-14">
-                  Noakhali, Bangladesh, is facing one of its worst floods in 2024, leaving thousands homeless.
-                  Urgent help is needed to provide food, safe drinking water, and emergency shelter.
-                  Your donation can offer immediate relief to families struggling to survive in the aftermath.
-                  The flood has wiped out homes, livelihoods, and essential infrastructure, leaving many in despair.
-                  Funds will help provide medical aid to prevent disease outbreaks in affected areas.
-                  Vulnerable groups, especially children and the elderly, are in 
-                </p>
-                <!-- input text -->
-                <input
-                  id="donate-input"
-                  type="text"
-                  placeholder="Type here"
-                  class="input input-bordered input-secondary w-full max-w-full"
-                />
-                <br />
-                <!-- button -->
-                <button
-                  onclick="donateButtonOne(this)"
-                  id="donat-btn"
-                  class="btn bg-btn max-w-full w-full mt-4">
-                  Donate Now
-                </button>
-              </div>
+              <br />
+              <h1 class="font-bold text-[20px]">
+                Donate for Flood at Noakhali, Bangladesh
+              </h1>
+              <p class="py-6 lg:pr-14">
+                Noakhali, Bangladesh, is facing one of its worst floods in 2024, leaving thousands homeless.
+                Urgent help is needed to provide food, safe drinking water, and emergency shelter.
+                Your donation can offer immediate relief to families struggling to survive in the aftermath.
+                The flood has wiped out homes, livelihoods, and essential infrastructure, leaving many in despair.
+                Funds will help provide medical aid to prevent disease outbreaks in affected areas.
+                Vulnerable groups, especially children and the elderly, are in
+              </p>
+              <!-- input text -->
+              <input id="donate-input" type="text" placeholder="Type here"
+                class="input input-bordered input-secondary w-full max-w-full" />
+              <br />
+              <!-- button -->
+              <button onclick="donateButtonOne(this)" id="donat-btn" class="btn bg-btn max-w-full w-full mt-4">
+                Donate Now
+              </button>
             </div>
           </div>
-          <!--  -->
         </div>
-      </section>
+        <!--  -->
+      </div>
+    </section>
 
-      <!--  -->
-      <section class="py-5">
-        <div class="section-container w-11/12 border-2 rounded-sm mx-auto">
-          <div class="hero bg-base-100 rounded-2xl shadow-sm">
-            <div class="hero-content grid lg:grid-cols-2">
-              <div cla>
-                <img src="assets/feni.png" alt="" />
+    <!--  -->
+    <section class="py-5">
+      <div class="section-container w-11/12 border-2 rounded-sm mx-auto">
+        <div class="hero bg-base-100 rounded-2xl shadow-sm">
+          <div class="hero-content grid lg:grid-cols-2">
+            <div cla>
+              <img src="assets/feni.png" alt="" />
+            </div>
+            <div class="text-left">
+              <div class="flex gap-2 bg-slate-200 lg:w-3/12 w-6/12 p-2 rounded-lg">
+                <img src="assets/coin.png" alt="" />
+                <span id="main-donate-two" class="font-bold text-color">0</span>
+                <span class="text-color font-bold">BDT</span>
               </div>
-              <div class="text-left">
-                <div
-                  class="flex gap-2 bg-slate-200 lg:w-3/12 w-6/12 p-2 rounded-lg"
-                >
-                  <img src="assets/coin.png" alt="" />
-                  <span id="main-donate-two" class="font-bold text-color"
-                    >0</span
-                  >
-                  <span class="text-color font-bold">BDT</span>
-                </div>
-                <br />
-                <h1 class="font-bold text-[20px]">
-                  Donate for Flood Relief in Feni,Bangladesh
-                </h1>
-                <p class="py-6 lg:pr-14">
-                  Feni, Bangladesh, is suffering from devastating floods in 2024, leaving thousands displaced.
-Immediate donations are crucial to provide food, clean water, and emergency shelter for victims.
-Your support can bring life-saving relief to families affected by this disaster.
-Homes, crops, and infrastructure have been destroyed, creating an urgent need for aid.
-Medical supplies are desperately needed to prevent the spread of waterborne diseases.
-Vulnerable groups, including children and the elderly, are at high risk and need immediate assistance.
-Relief teams are working on the ground, but they need more resources to meet the growing demand.
+              <br />
+              <h1 class="font-bold text-[20px]">
+                Donate for Flood Relief in Feni,Bangladesh
+              </h1>
+              <p class="py-6 lg:pr-14">
+                Feni, Bangladesh, is suffering from devastating floods in 2024, leaving thousands displaced.
+                Immediate donations are crucial to provide food, clean water, and emergency shelter for victims.
+                Your support can bring life-saving relief to families affected by this disaster.
+                Homes, crops, and infrastructure have been destroyed, creating an urgent need for aid.
+                Medical supplies are desperately needed to prevent the spread of waterborne diseases.
+                Vulnerable groups, including children and the elderly, are at high risk and need immediate assistance.
+                Relief teams are working on the ground, but they need more resources to meet the growing demand.
 
-                </p>
-                <!-- input text -->
-                <input
-                  id="donate-input-two"
-                  type="text"
-                  placeholder="Type here"
-                  class="input input-bordered input-secondary w-full max-w-full"
-                />
-                <br />
-                <!-- button -->
-                <button
-                  onclick="donateButtonTwo(this)"
-                  id="donat-btn"
-                  class="btn bg-btn max-w-full w-full mt-4"
-                >
-                  Donate Now
-                </button>
-              </div>
+              </p>
+              <!-- input text -->
+              <input id="donate-input-two" type="text" placeholder="Type here"
+                class="input input-bordered input-secondary w-full max-w-full" />
+              <br />
+              <!-- button -->
+              <button onclick="donateButtonTwo(this)" id="donat-btn" class="btn bg-btn max-w-full w-full mt-4">
+                Donate Now
+              </button>
             </div>
           </div>
-          <!--  -->
         </div>
-      </section>
-      <!--  -->
-      <section class="py-5">
-        <div class="section-container w-11/12 border-2 rounded-sm mx-auto">
-          <div class="hero bg-base-100 rounded-2xl shadow-sm">
-            <div class="hero-content grid lg:grid-cols-2">
-              <div cla>
-                <img src="assets/quota-protest.png" alt="" />
+        <!--  -->
+      </div>
+    </section>
+    <!--  -->
+    <section class="py-5">
+      <div class="section-container w-11/12 border-2 rounded-sm mx-auto">
+        <div class="hero bg-base-100 rounded-2xl shadow-sm">
+          <div class="hero-content grid lg:grid-cols-2">
+            <div cla>
+              <img src="assets/quota-protest.png" alt="" />
+            </div>
+            <div class="text-left">
+              <div class="flex gap-2 bg-slate-200 lg:w-3/12 w-6/12 p-2 rounded-lg">
+                <img src="assets/coin.png" alt="" />
+                <span id="main-donate-three" class="font-bold text-color">0</span>
+                <span class="text-color font-bold">BDT</span>
               </div>
-              <div class="text-left">
-                <div
-                  class="flex gap-2 bg-slate-200 lg:w-3/12 w-6/12 p-2 rounded-lg"
-                >
-                  <img src="assets/coin.png" alt="" />
-                  <span id="main-donate-three" class="font-bold text-color"
-                    >0</span
-                  >
-                  <span class="text-color font-bold">BDT</span>
-                </div>
-                <br />
-                <h1 class="font-bold text-[20px]">
-                  Aid for Injured in the Quota Movement
-                </h1>
-                <p class="py-6 lg:pr-14">
-                  The 2024 Quota Movement has left many injured, and they urgently need medical assistance.
-                  Donations are needed to provide life-saving treatments and care for those hurt in the protests.Many victims are struggling to afford necessary surgeries and rehabilitation.
-                  Your support can help cover hospital bills, medication, and long-term recovery services.
-                  Families of the injured are facing financial hardships, and aid is critical to ease their burden. Medical supplies and trauma care are in short supply due to the growing number of injured.
-                </p>
-                <!-- input text -->
-                <input
-                  id="donate-input-three"
-                  type="text"
-                  placeholder="Type here"
-                  class="input input-bordered input-secondary w-full max-w-full"
-                />
-                <br />
-                <!-- button -->
-                <button
-                  onclick="donateButtonThree(this)"
-                  id="donat-btn"
-                  class="btn bg-btn max-w-full w-full mt-4"
-                >
-                  Donate Now
-                </button>
-              </div>
+              <br />
+              <h1 class="font-bold text-[20px]">
+                Aid for Injured in the Quota Movement
+              </h1>
+              <p class="py-6 lg:pr-14">
+                The 2024 Quota Movement has left many injured, and they urgently need medical assistance.
+                Donations are needed to provide life-saving treatments and care for those hurt in the protests.Many
+                victims are struggling to afford necessary surgeries and rehabilitation.
+                Your support can help cover hospital bills, medication, and long-term recovery services.
+                Families of the injured are facing financial hardships, and aid is critical to ease their burden.
+                Medical supplies and trauma care are in short supply due to the growing number of injured.
+              </p>
+              <!-- input text -->
+              <input id="donate-input-three" type="text" placeholder="Type here"
+                class="input input-bordered input-secondary w-full max-w-full" />
+              <br />
+              <!-- button -->
+              <button onclick="donateButtonThree(this)" id="donat-btn" class="btn bg-btn max-w-full w-full mt-4">
+                Donate Now
+              </button>
             </div>
           </div>
-          <!--  -->
         </div>
-      </section>
-      <!--  -->
+        <!--  -->
+      </div>
+    </section>
+    <!--  -->
 
-      <!-- History section Start -->
+    <!-- History section Start -->
 
-      <dialog id="my-modal" class="modal">
-        <div
-          class="modal-box text-center py-5 max-w-[340px] mx-auto bg-white shadow-md"
-        >
-          <h3 class="font-bold text-4xl">Congrates !</h3>
-          <br />
-          <img class="mx-auto" src="assets/coin.png" alt="" />
-          <p class="py-4 text-lg">You Have Donated for Humankind</p>
-          <span class="font-bold text-2xl">Successfully</span>
-          <div class="modal-action items-center mx-auto">
-            <form method="dialog" class="mx-auto">
-              <!-- if there is a button in form, it will close the modal -->
-              <button class="btn hover:bg-btn">Close Confirmation</button>
-            </form>
-          </div>
+    <dialog id="my-modal" class="modal">
+      <div class="modal-box text-center py-5 max-w-[340px] mx-auto bg-white shadow-md">
+        <h3 class="font-bold text-4xl">Congrates !</h3>
+        <br />
+        <img class="mx-auto" src="assets/coin.png" alt="" />
+        <p class="py-4 text-lg">You Have Donated for Humankind</p>
+        <span class="font-bold text-2xl">Successfully</span>
+        <div class="modal-action items-center mx-auto">
+          <form method="dialog" class="mx-auto">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn hover:bg-btn">Close Confirmation</button>
+          </form>
         </div>
-      </dialog>
-    </main> 
+      </div>
+    </dialog>
+  </main>
 
 
-    <!-- Footer div start -->
-    <footer>
-      <div id="history-div" class="w-11/12 mx-auto hidden">
-        <!-- <div class="px-4 py-8 border-2 rounded-lg my-5 shadow-sm">
+  <!-- Footer div start -->
+  <footer>
+    <div id="history-div" class="w-11/12 mx-auto hidden">
+      <!-- <div class="px-4 py-8 border-2 rounded-lg my-5 shadow-sm">
           <span class="font-bold"
             >96500 Taka is Donated for famine-2024 at Feni, Bangladesh</span
           >
@@ -286,13 +233,13 @@ Relief teams are working on the ground, but they need more resources to meet the
             Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)
           </p>
         </div> -->
-      </div>
-    </footer>
+    </div>
+  </footer>
 
-     
-    <!-- script link add -->
-    <script src="./js/faq.js"></script>
-    <script src="./js/main.js"></script>
-  </body>
+
+  <!-- script link add -->
+  <script src="./js/faq.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
 </html>
-
